@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="subbox">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7W-U_DgeO0_4p12k0hV5-HNOR3CJhmtThA&usqp=CAU" onmouseover="change1()">
+       </div>
+        <div class="subbox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP81DLcOuxsDEpIhoMuCUPpILHbBO3Y9VJw&usqp=CAU"onmouseover="change2()">
+            </div>
+            <div class="subbox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5zVFxq27khmtgUssrgAK5Zy_XAH1Z2DqrA&usqp=CAU "onmouseover="change3()">
+            </div>
+        </div>
+    <div class="box">
+        <h1>watch</h1>
+
+
+
+        <div class="watch" id ="id1">
+        <img id = "myImage" onmouseover = "changeImage()" src="05.jpg">
+  
+        <!-- <img id = "myImage"  src="05.jpg"> -->
+   
+    </div>
+    <div class="size">
+        
+        <div class="size-head">
+           size
+        </div>
+
+        <div class="size-box">5</div>
+        <div class="size-box">6</div>
+
+        <div class="size-box">7</div>
+
+        <div class="size-box">8</div>
+
+    </div>
+        
+        <div class="btn">
+           ADD TO CART
+        </div>
+</div>
+   
+</div>
+
+
+ <script>
+       
+        function change3(){
+            document.getElementById('id1').innerHTML='<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5zVFxq27khmtgUssrgAK5Zy_XAH1Z2DqrA&usqp=CAU ">';
+       
+        }   
+        function change2(){
+            document.getElementById('id1').innerHTML='<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP81DLcOuxsDEpIhoMuCUPpILHbBO3Y9VJw&usqp=CAU">';
+        } 
+        function change1(){
+            document.getElementById('id1').innerHTML='<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7W-U_DgeO0_4p12k0hV5-HNOR3CJhmtThA&usqp=CAU">';
+       
+       
+        } 
+    </script>
+
+    <script>
+//         function changeImage() {
+//     var image = document.getElementById('myImage');
+//     if (image.src.match("05.jpg")) {
+//         image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7W-U_DgeO0_4p12k0hV5-HNOR3CJhmtThA&usqp=CAU";
+//     }
+//     else{
+//         image.src="05.jpg";
+//     }
+// }
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5zVFxq27khmtgUssrgAK5Zy_XAH1Z2DqrA&usqp=CAU ")) {
+        image.src = "05.jpg";
+    }
+    else{
+        image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5zVFxq27khmtgUssrgAK5Zy_XAH1Z2DqrA&usqp=CAU ";
+    }
+}
+
+    </script>
+</body>
+</html>
